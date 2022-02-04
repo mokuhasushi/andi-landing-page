@@ -26,6 +26,11 @@ export const Bubble = styled.div`
     fadeIn ${(props) => (props.duration ? props.duration : "5s")} linear
       infinite;
 
+  @media screen and (max-width: 500px) {
+    width: ${(props) => (props.radiusMobile ? props.radiusMobile : "50px")};
+    height: ${(props) => (props.radiusMobile ? props.radiusMobile : "50px")};
+  }
+
   @keyframes animate {
     from {
     }
